@@ -1,0 +1,82 @@
+:root {
+    --background: #ffffff;
+    --primary: #aeffb2;
+    --secondary: #b7f8ba;
+    --tertiary: #a3ffa8;
+    --quaternary: #8cfd92;
+    --black: #424242;
+}
+
+@font-face {
+    font-family: 'customFont';
+    src: url('EduAUVICWANTHand-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    color: var(--black);
+    font-family: 'customFont', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* /////HEADER///// */
+.header_container {
+    background-color: var(--primary);
+}
+
+#menu_button {
+    padding: 1em;
+    height: 2.5em;
+    width: 2.5em;
+}
+
+/* /////BANNER///// */
+#banner_image {
+    width: 100vw;
+    height: 75vh;
+}
+
+/* /////SECTION 1///// */
+.section1 {
+    background-color: var(--background);
+    width: 100vw;
+    height: 85vh;
+}
+
+/* /////SECTION 2///// */
+.section2 {
+    background-color: var(--secondary);
+    width: 100vw;
+    height: 85vh;
+}
+
+/* /////SECTION 3///// */
+.section3 {
+    background-color: var(--tertiary);
+    width: 100vw;
+    height: 85vh;
+}
+
+/* /////FOOTER///// */
+.footer_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--quaternary);
+}
+
+#footer_text-top {
+    padding-top: 1em;
+}
+
+#footer_text-bottom {
+    padding-bottom: 1em;
+}
