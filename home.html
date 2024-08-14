@@ -10,6 +10,7 @@
             crossorigin="anonymous">
     </script>
     <script src="main.js"></script>
+    <script src="whackAmole.js"></script>
 </head>
 <body>
     <header>
@@ -19,9 +20,9 @@
         <div class="menu_container">
             <div class="menu_links">
                 <a href="home.html">Home</a>
-                <a href="home.html#story_container">Story</a>
-                <a href="home.html#mole_container">Whack A Mole</a>
-                <a href="home.html#faq_container">FAQ</a>
+                <a href="home.html?story">Story</a>
+                <a href="home.html?mole">Whack A Mole</a>
+                <a href="home.html?faq">FAQ</a>
                 <a href="login.html">Login</a>
             </div>
         </div>
@@ -30,15 +31,91 @@
     <div class="banner">
         <img id="banner_image" src="Images/folklore.jpg" alt="Image of taylor swifts debut album">
     </div>
-    <div class="story_container">
 
-    </div>
-    <div class="mole_container">
-        
-    </div>
-    <div class="faq_container">
-        
-    </div>
+    <section class="story_container" id="scroll-story">
+        <div class="story_box">
+            <h1 id="story_title">The Enigmatic Whispers of the Forgotten Grove</h1>
+            <p id="story_text">
+                In the heart of an ancient forest, where sunlight barely pierced the dense canopy, lay the Forgotten Grove. This secluded enclave, shrouded in perpetual twilight, was a place of mystery and legend. The trees, gnarled and twisted, seemed to whisper secrets to those who dared to listen. Their leaves, a deep emerald, rustled with an eerie cadence, as if communicating in a language long lost to time.
+                The air was thick with the scent of moss and damp earth, mingling with the faint aroma of wildflowers that bloomed in hidden corners. A narrow, winding path, overgrown with roots and vines, led to the heart of the grove. Here, at the center, stood an ancient stone altar, covered in intricate carvings that depicted scenes of forgotten rituals and celestial events.
+                Legends spoke of a time when the grove was a sacred place, where druids and sages gathered to commune with the spirits of the forest. They believed that the grove was a nexus of mystical energies, a place where the veil between worlds was thin. It was said that on certain nights, when the moon was full and the stars aligned, the spirits would emerge from the shadows to dance and sing, their ethereal forms glowing with an otherworldly light.
+                Few dared to venture into the grove, for it was also said to be guarded by ancient guardians, beings of immense power and wisdom. These guardians, neither fully human nor beast, were the protectors of the grove’s secrets. Those who sought to exploit the grove’s power for selfish ends were never seen again, their fates a cautionary tale whispered among the villagers.
+                And so, the Forgotten Grove remained a place of wonder and fear, its mysteries preserved by the passage of time and the whispers of the wind.
+            </p>
+        </div>
+    </section>
+    <section class="mole_container" id="scroll-mole">
+        <div class="mole_playArea">
+            <div id="mole_score">
+                <p>Score : 0</p>
+            </div>
+            <div class="mole_holes">
+                <img id="hole1" src="Images/hole.png" alt="Hole">
+                <img id="hole2" src="Images/hole.png" alt="Hole">
+                <img id="hole3" src="Images/hole.png" alt="Hole">
+                <img id="hole4" src="Images/hole.png" alt="Hole">
+                <img id="hole5" src="Images/hole.png" alt="Hole">
+                <img id="hole6" src="Images/hole.png" alt="Hole">
+                <img id="hole7" src="Images/hole.png" alt="Hole">
+                <img id="hole8" src="Images/hole.png" alt="Hole">
+                <img id="hole9" src="Images/hole.png" alt="Hole">
+            </div>
+        </div>
+    </section>
+    <section class="faq_container" id="scroll-faq">
+        <div class="faq">
+            <div class="faq_title-1">
+                <h1>Why did you make this?</h1>
+            </div>
+            <div class="faq_anwser-1">
+                <p>I made this site to practice with jQuery.</p>
+                <p>I made this site to practice with jQuery.</p>
+                <p>I made this site to practice with jQuery.</p>
+                <p>I made this site to practice with jQuery.</p>
+                <p>I made this site to practice with jQuery.</p>
+                <p>I made this site to practice with jQuery.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq_title-2">
+                <h1>How long did this take?</h1>
+            </div>
+            <div class="faq_anwser-2">
+                <p>This site took a day to make if you dont look at whack a mole. SO DONT LOOK AT IT!</p>
+                <p>This site took a day to make if you dont look at whack a mole. SO DONT LOOK AT IT!</p>
+                <p>This site took a day to make if you dont look at whack a mole. SO DONT LOOK AT IT!</p>
+                <p>This site took a day to make if you dont look at whack a mole. SO DONT LOOK AT IT!</p>
+                <p>This site took a day to make if you dont look at whack a mole. SO DONT LOOK AT IT!</p>
+                <p>This site took a day to make if you dont look at whack a mole. SO DONT LOOK AT IT!</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq_title-3">
+                <h1>Why is everyhting random?</h1>
+            </div>
+            <div class="faq_anwser-3">
+                <p>I don't know i just made something to practice and i made the text with AI.</p>
+                <p>I don't know i just made something to practice and i made the text with AI.</p>
+                <p>I don't know i just made something to practice and i made the text with AI.</p>
+                <p>I don't know i just made something to practice and i made the text with AI.</p>
+                <p>I don't know i just made something to practice and i made the text with AI.</p>
+                <p>I don't know i just made something to practice and i made the text with AI.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq_title-4">
+                <h1>UHM?</h1>
+            </div>
+            <div class="faq_anwser-4">
+                <p>LEAVE ME ALOOOOOOOOOOOOOOOOOOOOOOOOONE!!!!!!!!</p>
+                <p>LEAVE ME ALOOOOOOOOOOOOOOOOOOOOOOOOONE!!!!!!!!</p>
+                <p>LEAVE ME ALOOOOOOOOOOOOOOOOOOOOOOOOONE!!!!!!!!</p>
+                <p>LEAVE ME ALOOOOOOOOOOOOOOOOOOOOOOOOONE!!!!!!!!</p>
+                <p>LEAVE ME ALOOOOOOOOOOOOOOOOOOOOOOOOONE!!!!!!!!</p>
+                <p>LEAVE ME ALOOOOOOOOOOOOOOOOOOOOOOOOONE!!!!!!!!</p>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="footer_container">

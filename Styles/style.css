@@ -5,6 +5,7 @@
     --tertiary: #a3ffa8;
     --quaternary: #8cfd92;
     --black: #424242;
+    --brown: #663300;
 }
 
 @font-face {
@@ -36,6 +37,7 @@ body {
     padding: 1em;
     height: 2.5em;
     width: 2.5em;
+    cursor: pointer;
 }
 
 .menu_container {
@@ -66,39 +68,146 @@ body {
     height: 85vh;
 }
 
-/* /////SECTION 1///// */
+/* /////STORY///// */
 .story_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: var(--background);
     width: 100vw;
     height: 85vh;
 }
 
-/* /////SECTION 2///// */
+.story_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary);
+    border: var(--brown) 4px solid;
+    border-radius: 30px;
+    width: 70%;
+    height: 80%;
+}
+
+#story_text {
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+
+
+/* /////WHACK A MOLE///// */
 .mole_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--secondary);
     width: 100vw;
     height: 85vh;
 }
 
-/* /////SECTION 3///// */
-.faq_container {
-    background-color: var(--tertiary);
-    width: 100vw;
-    height: 85vh;
+.mole_playArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    border-radius: 30px;
+    width: 35em;
+    height: 35em;
+    border: var(--brown) 4px solid;
 }
 
+.mole_holes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.mole_holes img {
+    width: 10em;
+    height: 10em;
+}
+
+#mole_score {
+    text-align: center;
+    background-color: var(--quaternary);
+    width: 100%;
+    border-radius: 30px;
+}
+
+/* /////FAQ///// */
+.faq_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--tertiary);
+    width: 100vw;
+}
+
+.faq {
+    width: 80%;
+    margin: 2em;
+    padding: 1em;
+}
+
+[class*="faq_title"] {
+    background-color: var(--quaternary);
+    border-radius: 30px;
+    padding: 0.1em;
+    padding-left: 10em;
+    padding-right: 10em;
+    text-align: center;
+    cursor: pointer;
+  }
+
+.faq_anwser-1{
+    background-color: var(--secondary);
+    padding: 1em;
+    padding-left: 5em;
+    border-radius: 30px;
+    display: none;
+  }
+
+.faq_anwser-2{
+    background-color: var(--secondary);
+    padding: 1em;
+    padding-left: 5em;
+    border-radius: 30px;
+    display: none;
+  }
+
+.faq_anwser-3{
+    background-color: var(--secondary);
+    padding: 1em;
+    padding-left: 5em;
+    border-radius: 30px;
+    display: none;
+  }
+
+.faq_anwser-4{
+    background-color: var(--secondary);
+    padding: 1em;
+    padding-left: 5em;
+    border-radius: 30px;
+    display: none;
+  }
+  
 /* /////FOOTER///// */
 .footer_container {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--quaternary);
+    width: 100vw;
 }
 
 #footer_text-top {
     padding-top: 1em;
+    cursor: pointer;
 }
 
 #footer_text-bottom {
     padding-bottom: 1em;
+    cursor: pointer;
 }
