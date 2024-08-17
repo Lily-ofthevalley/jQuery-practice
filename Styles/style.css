@@ -6,6 +6,8 @@
     --quaternary: #8cfd92;
     --black: #424242;
     --brown: #663300;
+    --green: #40ff63;
+    --red: #f65151;
 }
 
 @font-face {
@@ -129,12 +131,37 @@ body {
     height: 10em;
 }
 
-#mole_score {
-    text-align: center;
-    background-color: var(--quaternary);
-    width: 100%;
+.mole_toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    background-color: var(--primary);
+    padding: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
     border-radius: 30px;
 }
+
+#mole_start {
+    background-color: var(--green);
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#mole_stop {
+    background-color: var(--red);
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+[id*="hole"] {
+    cursor: pointer;
+  }
 
 /* /////FAQ///// */
 .faq_container {
@@ -192,7 +219,7 @@ body {
     border-radius: 30px;
     display: none;
   }
-  
+
 /* /////FOOTER///// */
 .footer_container {
     display: flex;
